@@ -79,3 +79,26 @@ body{
     font-size: 100px;
     color: white;
 }
+
+.video_heading{
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    /* background-color: aqua; */
+}
+.video_heading h1{
+    color: #120E43;
+    font-size: 50px;
+    margin-bottom: -20px;
+}
+.video_heading hr{
+    margin-bottom: 50px;
+}
+
+.Overlay{
+    opacity: 0.6;
+    text-align: center;
+    height: 100%;
+    color: white;
+    margin-top: 200px;
+}
