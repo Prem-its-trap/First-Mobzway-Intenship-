@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2";
+    box-sizing: border-box;
+}
+.nav{
+    background-color: #120E43;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo h3{
+    color: white;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li {
+    list-style-type: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    padding: 0 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Baloo Bhai 2";
+}
+/* important */
+.cmp_header_menu_line{
+    background-color: white;
+    width: 33px;
+    height: 1px;
+    display: block;
+    position: relative;
+    top: 18px;
+}
+.cmp_header_menu_line::before{
+    content: "";
+    width: 33px;
+    background-color: white;
+    width: 33px;
+    height: 1px;
+    display: block;
+    position: relative;
+    top: 22px;
+}
+.cmp_header_menu_line::after{
+    content: "";
+    width: 33px;
+    background-color: white;
+    width: 33px;
+    height: 1px;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+.hero_section{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 1px;
+}
+.welcome{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.welcome h1{
+    font-size: 100px;
+    color: white;
+}
