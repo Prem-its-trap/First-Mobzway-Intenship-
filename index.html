@@ -20,9 +20,9 @@
         <div class="nav-links">
           <ul>
             <!--navigation items-->
-            <li><a href="#" target="_self">Visa Information</a></li>
-            <li><a href="" target="_blank"> Information</a></li>
-            <li><a href="" target="_self">Deals & packages</a></li>
+            <li><a href="#" target="_self">Home</a></li>
+            <li><a href="#takeATour">Take a Tour</a></li>
+            <li><a href="#contactUs">Contact us</a></li>
           </ul>
           <div class="menu">
             <span class="cmp_header_menu_line"></span>
@@ -38,20 +38,26 @@
           <h1>FEEL WINTER IN <br />INDIA</h1>
         </div>
       </section>
-      <section class="video-section">
+      <!-- Take a tour section -->
+      <section
+        class="video-section"
+        id="takeATour"
+        style="height: 148vh; overflow: hidden">
         <div class="video_heading">
           <h1>Take A Short Tour of INDIA</h1>
           <hr width="70%" />
         </div>
-        <video
-          width="100%"
-          autoplay
-          muted
-          style="position: absolute; z-index: -1111">
-          <source
-            src="Assets/welcome-to-india-cinematic-travel-film.mp4"
-            type="video/mp4" />
-        </video>
+        <div style="height: fit-content">
+          <video
+            width="100%"
+            autoplay
+            muted
+            style="position: absolute; z-index: -1111">
+            <source
+              src="Assets/welcome-to-india-cinematic-travel-film.mp4"
+              type="video/mp4" />
+          </video>
+        </div>
         <div class="Overlay">
           <h1 style="position: relative; top: 0; font-size: 100px">
             Beautiful INDIA
@@ -59,6 +65,34 @@
           <audio controls>
             <source src="Assets/just-relax-11157.mp3" type="audio/ogg" />
           </audio>
+        </div>
+      </section>
+
+      <!-- contact us section -->
+      <section id="contactUs" class="contact_us">
+        <div class="contact">
+          <div class="contact_text">
+            <h1>Contact us</h1>
+          </div>
+          <div class="contact_form">
+            <form action="#" class="form-container">
+              <div class="form_name">
+                <span>Enter Name</span><br />
+                <input type="text" required />
+              </div>
+              <div class="form_name">
+                <span>Enter Email</span><br />
+                <input type="email" required />
+              </div>
+              <div class="form_name">
+                <span>Enter Mobile number</span><br />
+                <input type="number" placeholder="Enter name" />
+              </div>
+              <div class="form_button">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
