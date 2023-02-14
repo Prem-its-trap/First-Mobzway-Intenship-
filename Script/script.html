@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript pratice</title>
+  </head>
+  <body>
+    <h2 id="demo">A Heading</h2>
+    <h2 id="ans"></h2>
+    <button onclick="myFunction()">Click</button>
+    <!-- <button onclick="window.print()">Print this page</button> -->
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph change";
+      }
+      const reset = () => {
+        document.getElementById("demo").innerHTML = "A Heading";
+      };
+      //   document.getElementById("demo").innerHTML = "Hello";
+      //   document.getElementById("demo").style.fontSize = "100px";
+
+      // variables
+      let a, b, c;
+      a = 5;
+      b = 6;
+      c = a + b;
+      document.getElementById("ans").innerHTML = c;
+
+      let name = "prem";
+      console.log(name);
+
+      document.write("IF ELSE statment");
+      document.write("<br /><br />");
+      var age = 22;
+      if (age > 18) {
+        document.write("bhai tu vote de skta h");
+      } else {
+        document.write("bhai abhi tu chota h");
+      }
+      document.write("<br /><br /><br /><br />");
+      document.write("Switch case");
+      var day = "sunday";
+      switch (day) {
+        case "sunday":
+          document.write("Sunday");
+          break;
+        case "Monday":
+          document.write("Monday");
+          break;
+        case "Tuesday":
+          document.write("Tuesday");
+          break;
+        case "wednesday":
+          document.write("wednesday");
+          break;
+        case "thrusday":
+          document.write("thrusday");
+          break;
+        case "friday":
+          document.write("friday");
+          break;
+        case "saturday":
+          document.write("saturday");
+          break;
+
+        default:
+          break;
+      }
+      document.write("<br />");
+      document.write("For Loop");
+      for (let index = 1; index < 10; index++) {
+        document.write(index + " ");
+      }
+
+      document.write("<br />");
+      document.write("For Loop");
+      let i = 1;
+      while (i <= 10) {
+        document.write(i * 2 + " ");
+        i++;
+      }
+
+      document.write("<br /><br>");
+      document.write("Function in javascript");
+      function toCelsius(fah) {
+        return (5 / 9) * (fah - 32);
+      }
+      document.write("<br /><br>");
+      document.write(" Celsius=" + toCelsius(77));
+    </script>
+  </body>
+</html>
