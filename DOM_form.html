@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function submitFun() {
+        let name = document.forms["form"]["fname"].value;
+        let email = document.forms["form"]["fmail"].value;
+        let phone = document.forms["form"]["fphone"].value;
+
+        const nameVal = document.getElementById("name_span");
+        const emailVal = document.getElementById("mail_span");
+        const phoneVal = document.getElementById("phone_span");
+        console.log(typeof phone);
+        if (name == "") {
+          nameVal.innerHTML = "Name is must";
+        } else {
+          nameVal.innerHTML = "";
+        }
+        if (email == "") {
+          emailVal.innerHTML = "Email is MUST";
+        } else {
+          emailVal.innerHTML = "";
+        }
+        if (phone == "") {
+          phoneVal.innerHTML = "Number is MUST";
+        } else if (phone.length < 10) {
+          phoneVal.innerHTML = "Phone number is less than 10 chars";
+        } else if (phone.length > 10) {
+          phoneVal.innerHTML = "Phone number is greater 10 chars";
+        } else {
+          phoneVal.innerHTML = "";
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #383cc1;
+      }
+      .form_container {
+        background-color: #12b0e8;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
+        height: 50%;
+      }
+      .form_div {
+        margin: 5px auto;
+        text-align: left;
+        justify-content: left;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        /* outline: 1px solid #120E43; */
+      }
+
+      label {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 500;
+      }
+      span {
+        color: red;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 500;
+      }
+    </style>
+    <title>DOM FORM</title>
+  </head>
+  <body>
+    <div class="form_container">
+      <form name="form" action="#" onsubmit="return false">
+        <div class="form_div">
+          <label for="#name">Name</label>
+          <input type="text" name="fname" id="name" /><br />
+          <span id="name_span"></span>
+        </div>
+        <div class="form_div">
+          <label for="#email">Email</label>
+          <input type="email" name="fmail" id="email" /><br />
+          <span id="mail_span"></span>
+        </div>
+        <div class="form_div">
+          <label for="#phone">Phone Number</label>
+          <input type="text" name="fphone" id="phone" /><br />
+          <span id="phone_span"></span>
+        </div>
+        <button type="submit" onclick="submitFun()">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
